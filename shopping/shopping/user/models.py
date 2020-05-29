@@ -8,6 +8,6 @@ class User(models.Model):
     register_date = models.DateTimeField(auto_now_add=True, verbose_name='등록날짜')
 
     class Meta:
-        data_table = 'm9_user'
+        db_table = 'm9_user'
         verbose_name = '사용자'
         verbose_name_plural = '사용자'

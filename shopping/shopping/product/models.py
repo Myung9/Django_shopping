@@ -10,7 +10,7 @@ class Product(models.Model):
     register_date = models.DateTimeField(auto_now_add=True, verbose_name='등록날짜')
 
     class Meta:
-        data_table = 'm9_product'
+        db_table = 'm9_product'
         verbose_name = '상품'
         verbose_name_plural = '상품'
 
