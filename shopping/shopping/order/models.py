@@ -8,6 +8,9 @@ class Order(models.Model):
     quantity = models.IntegerField(verbose_name='수량')
     register_date = models.DateTimeField(auto_now_add=True, verbose_name='등록날짜')
 
+    #admin페이지에서 객체를 문자열로 확인하기 위한 __str__
+    def __str__(self):
+        return str(self.user) + ' ' + str(self.product)
     class Meta:
         db_table = 'm9_order' 
         verbose_name = '주문'

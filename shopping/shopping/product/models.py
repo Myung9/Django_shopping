@@ -9,6 +9,10 @@ class Product(models.Model):
     stcuk = models.IntegerField(verbose_name='재고')
     register_date = models.DateTimeField(auto_now_add=True, verbose_name='등록날짜')
 
+    #admin페이지에서 객체를 문자열로 확인하기 위한 __str__
+    def __str__(self):
+        return self.name
+
     class Meta:
         db_table = 'm9_product'
         verbose_name = '상품'
