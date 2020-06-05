@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/m9/anaconda3/envs/jango/bin/python"
+    "python.pythonPath": "/Users/m9/anaconda3/envs/jango/bin/python",
+    "python.linting.pylintArgs": ["--load-plugins=pylint_django"]
 }
